@@ -493,7 +493,7 @@ components:
     id: synthetics-ac74913d-4bb5-4ed5-8585-89065027764f
     link: ''
     name: Snippets Admin
-    status: failed
+    status: healthy
     type: synthetics
   synthetics-b0b0f46e-a391-45c9-af80-38704cb883f8:
     display: true
@@ -560,5 +560,5 @@ components:
     status: healthy
     type: synthetics
 globalStatus:
-  message: Some systems are in trouble
-  status: failed
+  message: All systems healthy
+  status: healthy

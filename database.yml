@@ -17,6 +17,8 @@ contents:
     id: 5
   - icon: warning
     id: 6
+  - icon: warning
+    id: 7
 schema:
   status:
   - name: description

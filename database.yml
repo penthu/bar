@@ -13,7 +13,7 @@ contents:
     icon: warning
     id: 4
   - description: bar
-    icon: warniεng
+    icon: warniεεng
     id: 5
 schema:
   status:

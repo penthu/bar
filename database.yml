@@ -1,47 +1,47 @@
+contents: []
 schema:
-  release:
-    - name: id
-      type: integer
-      autoincrement: true
-      display: false
-    - name: product
-      type: string
-      label: Product
-      placeholder: Firefox
-    - name: channel
-      type: choice
-      label: Channel
-      choices:
-        - Release
-        - Beta
-        - Aurora
-        - Nightly
-        - ESR
-    - name: version
-      type: string
-    - name: release_date
-      type: date
-    - name: text
-      type: text
-    - name: is_public
-      type: boolean
-    - name: bug_search_url
-      type: url
-      label: Bug search URL
-    - name: system_requirements
-      type: text
-    - name: notes
-      type: list
-      list_type: note
   note:
-    - name: bug
-      type: integer
-    - name: note
-      type: text
-    - name: tag
-      type: choice
-      choices:
-        - fixed
-        - developer
-        - language
-contents:
+  - name: bug
+    type: integer
+  - name: note
+    type: text
+  - choices:
+    - fixed
+    - developer
+    - language
+    name: tag
+    type: choice
+  release:
+  - autoincrement: true
+    display: false
+    name: id
+    type: integer
+  - label: Product
+    name: product
+    placeholder: Firefox
+    type: string
+  - choices:
+    - Release
+    - Beta
+    - Aurora
+    - Nightly
+    - ESR
+    label: Channel
+    name: channel
+    type: choice
+  - name: version
+    type: string
+  - name: release_date
+    type: date
+  - name: text
+    type: text
+  - name: is_public
+    type: boolean
+  - label: Bug search URL
+    name: bug_search_url
+    type: url
+  - name: system_requirements
+    type: text
+  - list_type: note
+    name: notes
+    type: list

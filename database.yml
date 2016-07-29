@@ -11,3 +11,7 @@ schema:
         - failed
         - pending
 contents:
+ status:
+   - id: 1
+     description: foo
+     icon: healthy

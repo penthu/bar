@@ -1,4 +1,9 @@
-contents: []
+contents:
+- channel: esr
+  id: 2
+  product: foo
+  release_date: '2016'
+  version: '123.3'
 schema:
   note:
   - name: bug

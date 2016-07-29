@@ -1,17 +1,20 @@
+contents:
+  status:
+  - description: foo
+    icon: healthy
+    id: 1
+  - description: bar
+    icon: warning
+    id: 2
 schema:
   status:
-    - name: description
-      type: text
-      required: True
-    - name: icon
-      type: choice
-      choices:
-        - healthy
-        - warning
-        - failed
-        - pending
-contents:
- status:
-   - id: 1
-     description: foo
-     icon: healthy
+  - name: description
+    required: true
+    type: text
+  - choices:
+    - healthy
+    - warning
+    - failed
+    - pending
+    name: icon
+    type: choice

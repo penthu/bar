@@ -12,6 +12,9 @@ contents:
   - description: bar
     icon: warning
     id: 4
+  - description: bar
+    icon: warning
+    id: 5
 schema:
   status:
   - name: description

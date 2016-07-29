@@ -1,57 +1,13 @@
-contents:
-- channel: esr
-  id: 2
-  product: foo
-  release_date: '2016'
-  version: '123.3'
-- channel: esr
-  id: 3
-  product: rfoo
-  release_date: '2016'
-  version: '123.3'
 schema:
-  note:
-  - name: bug
-    type: integer
-  - name: note
-    type: text
-  - choices:
-    - fixed
-    - developer
-    - language
-    name: tag
-    type: choice
-  release:
-  - autoincrement: true
-    display: false
-    name: id
-    type: integer
-  - label: Product
-    name: product
-    placeholder: Firefox
-    type: string
-  - choices:
-    - Release
-    - Beta
-    - Aurora
-    - Nightly
-    - ESR
-    label: Channel
-    name: channel
-    type: choice
-  - name: version
-    type: string
-  - name: release_date
-    type: date
-  - name: text
-    type: text
-  - name: is_public
-    type: boolean
-  - label: Bug search URL
-    name: bug_search_url
-    type: url
-  - name: system_requirements
-    type: text
-  - list_type: note
-    name: notes
-    type: list
+  status:
+    - name: description
+      type: text
+      required: True
+    - name: icon
+      type: choice
+      choices:
+        - healthy
+        - warning
+        - failed
+        - pending
+contents:

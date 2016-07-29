@@ -4,6 +4,11 @@ contents:
   product: foo
   release_date: '2016'
   version: '123.3'
+- channel: esr
+  id: 3
+  product: foo
+  release_date: '2016'
+  version: '123.3'
 schema:
   note:
   - name: bug

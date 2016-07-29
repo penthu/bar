@@ -13,8 +13,10 @@ contents:
     icon: warning
     id: 4
   - description: bar
-    icon: warniεεng
+    icon: "warni\u03B5\u03B5ng"
     id: 5
+  - icon: warning
+    id: 6
 schema:
   status:
   - name: description

@@ -1,18 +1,22 @@
-schema:
-  - type: CharField
-    attributes:
-      label: description
-      required: True
-  - type: ChoiceField
-    attributes:
-      choices:
-        - healthy
-        - warning
-        - failed
-        - pending
-      label: icon
-  - type: CharField
-    attributes:
-      label: text
-      widget: Textarea
 contents:
+- description: ddd
+  icon: healthy
+  id: 1
+  text: dd
+schema:
+- attributes:
+    label: description
+    required: true
+  type: CharField
+- attributes:
+    choices:
+    - healthy
+    - warning
+    - failed
+    - pending
+    label: icon
+  type: ChoiceField
+- attributes:
+    label: text
+    widget: Textarea
+  type: CharField

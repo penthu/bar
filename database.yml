@@ -1,39 +1,18 @@
-contents:
-  status:
-  - description: foo
-    icon: healthy
-    id: 1
-  - description: bar
-    icon: warning
-    id: 2
-  - description: bar
-    icon: warning
-    id: 3
-  - description: bar
-    icon: warning
-    id: 4
-  - description: bar
-    icon: "warni\u03B5\u03B5ng"
-    id: 5
-  - icon: warning
-    id: 6
-  - icon: warning
-    id: 7
-  - description: "fooobar \r\n\r\naphjdsapofds"
-    icon: healthy
-    id: 8
-  - description: ddd
-    icon: failed
-    id: 9
 schema:
-  status:
-  - name: description
-    required: true
-    type: text
-  - choices:
-    - healthy
-    - warning
-    - failed
-    - pending
-    name: icon
-    type: choice
+  - type: CharField
+    attributes:
+      label: description
+      required: True
+  - type: ChoiceField
+    attributes:
+      choices:
+        - healthy
+        - warning
+        - failed
+        - pending
+      label: icon
+  - type: CharField
+    attributes:
+      label: text
+      widget: Textarea
+contents:

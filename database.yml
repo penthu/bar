@@ -22,6 +22,9 @@ contents:
   - description: "fooobar \r\n\r\naphjdsapofds"
     icon: healthy
     id: 8
+  - description: ddd
+    icon: failed
+    id: 9
 schema:
   status:
   - name: description
